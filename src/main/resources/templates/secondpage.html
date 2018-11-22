@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Second page</title>
+</head>
+<body>
+    <h1>You're on a second page!</h1>
+    <div>
+        <h2>ExtDataChangeProtV objects:</h2>
+        <ul th:each="extData: ${extDataChangeProtVList}">
+            <li th:text="${extData.protRecordId}"></li>
+        </ul>
+    </div>
+</body>
+</html>
